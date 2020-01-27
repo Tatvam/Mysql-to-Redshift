@@ -11,7 +11,7 @@ func main() {
 	name := [6]string{"Tat","Dad","cat", "dog", "mad", "goat"}
 	age  := [6]int{5, 6, 4, 6, 3,10}
 	// db,_:= sql.Open("mysql", "root:tatvam@/openhack")
-	db,_:= sql.Open("mysql", "shubug:Thumbsdown7320#@tcp(openhack-flydata.cdvbjpsetxhz.ap-southeast-1.rds.amazonaws.com:3306)/openhack")
+	db,_:= sql.Open("mysql", "XXXXXX:XXXXXXXX@tcp(XXXXXXXXXXXX.amazonaws.com:3306)/openhack")
 	fmt.Println(db)	
 
 	stmtCrTa,err := db.Prepare("create table us (" +

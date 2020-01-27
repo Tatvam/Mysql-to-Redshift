@@ -7,16 +7,16 @@ import psycopg2
 def main():
     sqs = boto3.client(
         "sqs",
-        aws_access_key_id="AKIA4GMGWBHWEKGGK2FE",
-        aws_secret_access_key="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",
+        aws_access_key_id="XXXXXXXXXXXXX",
+        aws_secret_access_key="XXXXXXXXXXXXXXXXXXXX",
         region_name="ap-southeast-1"
     )
 
-    con=psycopg2.connect(dbname='openhack', host='openhack-redshift-cluster.cayqwi3dhbik.ap-southeast-1.redshift.amazonaws.com',
-                        port=5439, user='shubug', password='Thumbsdown7320#')
+    con=psycopg2.connect(dbname='openhack', host='openhack-redshift-cluster.XXXXXXXXXXX.ap-southeast-1.redshift.amazonaws.com',
+                        port=5439, user='XXXXXXXXXXX', password='XXXXXXXXXX')
 
     #cur = con.cursor()
-    queue_url = 'https://sqs.ap-southeast-1.amazonaws.com/838337956332/DataStitchingQueue'
+    queue_url = 'XXXXXXXXXXXXXXXXXXXXXXX/DataStitchingQueue'
 
     program_name = "./sqlines/./sqlines"
     arguments = ["-s=mysql", "-t=redshift", "-in=./SqlQueries.sql"]

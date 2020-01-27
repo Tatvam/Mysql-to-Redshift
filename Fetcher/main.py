@@ -29,8 +29,8 @@ Keyname_2 = "binlog_file"
 
 client = boto3.client(
     "sns",
-    aws_access_key_id="AKIA4GMGWBHWEKGGK2FE",
-    aws_secret_access_key="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",
+    aws_access_key_id="XXXXXXXXXXXXXXXXXXX",
+    aws_secret_access_key="XXXXXXXXXXXXXXXXXXX",
     region_name="ap-southeast-1"
 
 )
@@ -38,10 +38,10 @@ client = boto3.client(
 parser = argparse.ArgumentParser()
 
 MYSQL_SETTINGS = {
-    "host": "openhack-flydata.cdvbjpsetxhz.ap-southeast-1.rds.amazonaws.com",
+    "host": "XXXXXXXXXXXXXXXXXXX",
     "port": 3306,
-    "user": "shubug",
-    "passwd": "Thumbsdown7320#"
+    "user": "XXXXXXXXXXXXXX",
+    "passwd": "XXXXXXXXXXXXX"
 }
 
 logging.basicConfig(
@@ -135,7 +135,7 @@ def main():
                                 )
     next_binlog = ''
     delimit = ';'
-    TopicArn = 'arn:aws:sns:ap-southeast-1:838337956332:Openhack-Data-Stiching'
+    TopicArn = 'arn:aws:sns:ap-southeast-1:XXXXXXXXXXXX:Openhack-Data-Stiching'
     for binlogevent in stream:
         e_start_pos, last_pos = stream.log_pos, stream.log_pos
         if type(binlogevent).__name__ == 'RotateEvent':

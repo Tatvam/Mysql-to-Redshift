@@ -12,7 +12,7 @@ func main() {
 	// course :=[3]string{"Math","Phy", "Chem"}
 	//age  := [6]int{5, 6, 4, 6, 3,10}
 	// db,_:= sql.Open("mysql", "root:tatvam@/openhack")
-	db,_:= sql.Open("mysql", "shubug:Thumbsdown7320#@tcp(openhack-flydata.cdvbjpsetxhz.ap-southeast-1.rds.amazonaws.com:3306)/openhack")
+	db,_:= sql.Open("mysql", "XXXXXXX:XXXXXXXX#@tcp(openhack-flydata.XXXXXXXXXXXXX.com:3306)/openhack")
 	fmt.Println(db)	
 
 	stmtCrTa,err := db.Prepare("create table us (" +
