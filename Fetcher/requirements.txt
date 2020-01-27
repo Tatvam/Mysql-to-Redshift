@@ -1,0 +1,4 @@
+PyMySQL==0.9.3
+mysql_replication==0.21
+simplejson==3.13.2
+boto3==1.11.7
